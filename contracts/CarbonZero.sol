@@ -1058,7 +1058,7 @@ pragma solidity ^0.8.0;
         }
         
         function _setTaxFee(uint256 taxFee) external onlyOwner() {
-            require(taxFee >= 0 && taxFee <= 10, 'taxFee should be in 0 - 10');
+            require(taxFee >= 0 && taxFee <= 2, 'taxFee should be in 0 - 2');
             _taxFee = taxFee;
         }
 
